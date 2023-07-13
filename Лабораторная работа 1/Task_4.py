@@ -1,8 +1,9 @@
-# TODO Найдите количество книг, которое можно разместить на дискете
-symbols_ = 25
-stroka = 50
-stranica = 100
-disk = 1.44
-inf_objem = disk * 1024 *1024
-objem_kniga = 4* symbols_ * stroka * stranica
-print("Количество книг, помещающихся на дискету:", round(inf_objem//objem_kniga))
+users = ['user1', 'user2', 'user3', 'user1', 'user4', 'user2']
+statistic_of_users = {
+    "Общее количество": 0,
+     "Уникальные посещения": 0
+}
+statistic_of_users["Общее количество"] = len(users)
+statistic_of_users["Уникальные посещения"] = len(set(users))
+print(statistic_of_users)
+# TODO Добавьте словарь и замените в нем нулевые значения статисчикой посещений
